@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tables</title>
+
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tables.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">token</span> Counter
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="dashboard.html">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="control.html">
+              <span class="material-icons-outlined">fact_check</span> Control
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="tables.html">
+              <span class="material-icons-outlined">poll</span> Tables
+            </a>
+          </li>
+          <li class="sidebar-list-item" style="margin-top: 40vh">
+            <a href="login.html">
+              <span class="material-icons-outlined">logout</span> Logout
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>Data Tables</h2>
+        </div>
+
+        <div class="filter-section">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" />
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" />
+          <button id="filterBtn" class="btn btn-secondary">Filter</button>
+        </div>
+
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Counted Ripe</th>
+              <th>Counted Raw</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sample Data Row -->
+            <tr>
+              <td>2024-10-01</td>
+              <td>150</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>2024-10-02</td>
+              <td>200</td>
+              <td>15</td>
+            </tr>
+            <!-- Additional rows will be dynamically populated here -->
+          </tbody>
+        </table>
+      </main>
+      <!-- End Main -->
+    </div>
+
+    <!-- Scripts -->
+    <!-- Custom JS -->
+    <script src="assets/js/tables.js"></script>
+  </body>
+</html>

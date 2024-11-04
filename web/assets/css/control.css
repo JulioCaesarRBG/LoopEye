@@ -1,0 +1,41 @@
+/* Button Styles */
+.btn {
+  padding: 10px 20px; /* Adjust padding for a better look */
+  border: none;
+  border-radius: 5px; /* Round corners */
+  color: #fff; /* White text */
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-secondary {
+  background-color: #607d8b; /* Gray background for secondary button */
+}
+
+.btn-secondary:hover {
+  background-color: #455a64; /* Darker gray on hover */
+}
+
+.btn-warning {
+  background-color: #ff9800; /* Orange background */
+}
+
+.btn-warning:hover {
+  background-color: #c66900; /* Darker orange on hover */
+}
+
+.btn-danger {
+  background-color: #d50000; /* Red background */
+}
+
+.btn-danger:hover {
+  background-color: #9b0000; /* Darker red on hover */
+}
+
+/* Count Display Styles */
+.count-display {
+  font-size: 24px; /* Increase font size for count display */
+  margin-bottom: 20px; /* Add some space below */
+  color: #fff; /* Set text color to white */
+}
